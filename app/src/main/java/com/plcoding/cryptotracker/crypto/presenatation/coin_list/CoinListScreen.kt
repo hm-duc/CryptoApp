@@ -19,12 +19,15 @@ import androidx.compose.ui.unit.dp
 import com.plcoding.cryptotracker.crypto.presenatation.coin_list.components.CoinListItem
 import com.plcoding.cryptotracker.crypto.presenatation.coin_list.components.previewCoin
 import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
+import kotlinx.coroutines.flow.Flow
 
 @Composable
 fun CoinListScreen(
     state: CoinListState,
     modifier: Modifier = Modifier
 ) {
+
+
     if (state.isLoading) {
         Box(
             modifier = modifier
